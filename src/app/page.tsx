@@ -3,6 +3,7 @@
 import AppWelcome from "./component/App Welcome";
 
 
+
 export default function Home() {
   const title = 'Welcome sunny';
   const currentYear = <p>2025</p>
@@ -13,8 +14,9 @@ export default function Home() {
 
   return (
     <div>
+      
       {/* <h1>Sunny Site</h1> */}
-      <AppWelcome />
+      <AppWelcome headTitle="thj" isShow = {true} />
       <button className="bg-amber-300 text-amber-50 rounded-lg" onClick={handleClick}>clicke here</button>
       <p>{title.toUpperCase()}</p>
       {currentYear}
