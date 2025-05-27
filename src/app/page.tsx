@@ -1,5 +1,6 @@
 'use client'
 
+import { Button } from "@/components/ui/button";
 import AppWelcome from "./component/App Welcome";
 
 
@@ -16,9 +17,10 @@ export default function Home() {
     <div>
       
       {/* <h1>Sunny Site</h1> */}
-      <AppWelcome headTitle="thj" isShow = {true} />
-      <button className="bg-amber-300 text-amber-50 rounded-lg" onClick={handleClick}>clicke here</button>
+      <AppWelcome headTitle="thj" />
+      <Button onClick={handleClick}>clicke me</Button>
       <p>{title.toUpperCase()}</p>
+      <p>{process.env.NEXT_PUBLIC_APP_NAME}</p>
       {currentYear}
       {
         isShow && <p>Date: 10/02/2000</p> 
