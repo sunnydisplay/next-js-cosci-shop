@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Card, CardContent, CardHeader } from "../ui/card";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -27,7 +28,15 @@ const Features05Page = ({courses} : Features05Page) => {
                 </p>
               </CardHeader>
               <CardContent className="mt-auto px-0 pb-0">
-                {course.picture}
+                <Image
+                    src={course.picture} 
+                    alt={course.datail} 
+                    width={0} 
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: '100%', height:150}}
+                    priority
+                    />
               </CardContent>
             </Card>
           ))}
