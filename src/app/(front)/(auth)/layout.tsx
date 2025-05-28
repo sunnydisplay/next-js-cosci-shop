@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Syne } from "next/font/google";
 import "../globals.css";
-import Navbar01Page from "@/components/navbar-01/navbar-01";
 
 const syne = Syne({
   //subsets: ['thai'],
@@ -24,7 +23,6 @@ export default function Authlayout({
       <body
         className={`${syne.className}`}
       >
-        <Navbar01Page/>
         {children}
       </body>
     </html>
