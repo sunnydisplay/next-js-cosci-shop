@@ -39,7 +39,7 @@ const SignUp01Page = () => {
     <div className="min-h-screen flex items-center justify-center">
       <div className="max-w-xs w-full flex flex-col items-center">
         <p className="mt-4 text-xl font-bold tracking-tight">
-          Sign up for Shadcn UI Blocks
+          Register
         </p>
 
         <Button className="mt-8 w-full gap-3">
