@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Playpen_Sans } from "next/font/google";
+import { Syne } from "next/font/google";
 import "./globals.css";
+import Navbar01Page from "@/components/navbar-01/navbar-01";
 
-const playpen_sans = Playpen_Sans({
+const syne = Syne({
   //subsets: ['thai'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
+  weight: ['400', '500', '600', '700', '800'],
   display: 'swap', 
 });
 
@@ -21,8 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playpen_sans.className}`}
+        className={`${syne.className}`}
       >
+        <Navbar01Page/>
         {children}
       </body>
     </html>

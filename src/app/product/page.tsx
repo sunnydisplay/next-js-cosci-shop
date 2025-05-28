@@ -1,7 +1,9 @@
+import Blog02Page from "../blog/page";
+
 export default function Product () {
     return (
         <>
-        <p>รายการสินค้า</p>
+        <Blog02Page/>
         </>
     );
 }
