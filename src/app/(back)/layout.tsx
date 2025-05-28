@@ -9,7 +9,7 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "เข้าสู่ระบบ",
+  title: "Dashboard",
   description: "ขายสินค้าประจำปี",
 };
 
