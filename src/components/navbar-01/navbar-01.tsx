@@ -19,7 +19,9 @@ const Navbar01Page = () => {
             <Link href="/login">Sign in</Link>
 
             </Button>
-            <Button>Get Started</Button>
+            <Button asChild>
+            <Link href="/register">Get Started</Link>
+            </Button>
 
             {/* Mobile Menu */}
             <div className="md:hidden">
