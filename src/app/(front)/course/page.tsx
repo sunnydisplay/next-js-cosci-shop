@@ -1,9 +1,14 @@
 import Features05Page from "@/components/features-05/features-05";
 
-export default function course() {
+export default async function course() {
+    const data = await fetch('https://api.codingthailand.com/api/course')
+    const courses = await data.json();
+
   return (
-    <main>
-      <Features05Page/>
-    </main>
+    <>
+    {
+        courses && <Features05Page courses={courses.data} />
+    }
+    </>
   );
 }
