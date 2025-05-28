@@ -10,7 +10,7 @@ const Features05Page = ({courses} : Features05Page) => {
     <div className="min-h-screen flex items-center justify-center">
       <div className="max-w-screen-lg w-full py-10 px-6">
         <h2 className="text-4xl md:text-5xl md:leading-[3.5rem] font-bold tracking-tight sm:max-w-xl sm:text-center sm:mx-auto">
-          Boost Your Strategy with Smart Features
+          คอร์สเรียนที่เปิดสอน
         </h2>
         <div className="mt-8 w-full mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
           {courses.map((course) => (
@@ -27,7 +27,7 @@ const Features05Page = ({courses} : Features05Page) => {
                 </p>
               </CardHeader>
               <CardContent className="mt-auto px-0 pb-0">
-                <div className="bg-muted h-40 ml-6 rounded-tl-xl" />
+                {course.picture}
               </CardContent>
             </Card>
           ))}
