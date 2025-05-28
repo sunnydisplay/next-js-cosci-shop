@@ -10,11 +10,11 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Cosci  shop",
+  title: "เข้าสู่ระบบ",
   description: "ขายสินค้าประจำปี",
 };
 
-export default function RootLayout({
+export default function Authlayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
