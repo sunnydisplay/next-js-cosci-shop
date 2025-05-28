@@ -20,7 +20,7 @@ const Navbar01Page = () => {
 
             </Button>
             <Button asChild>
-            <Link href="/register">Get Started</Link>
+            <Link href="/signup">Get Started</Link>
             </Button>
 
             {/* Mobile Menu */}
