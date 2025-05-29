@@ -58,7 +58,10 @@ export default function CartList() {
             Total : {totalPrice}
         </div>
         <Button variant="outline" className="bg-rose-500" onClick={() => {clearCart(); } }> Clear cart </Button>
-      <Button className="ml-2 bg-emerald-400 text-gray-950" onClick={() => {clearCart(); } }> Check out! </Button>
+      <Button className="ml-2 bg-emerald-400 text-gray-950" onClick={() => {
+        clearCart(); 
+        router.replace('/product')
+        }}> Check out! </Button>
       </div>
       
     </div>
