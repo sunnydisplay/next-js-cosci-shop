@@ -1,8 +1,10 @@
+'use client'
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Button } from "@/components/ui/button";
 import { useCartStore } from "@/lib/cart-store";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 export default function CartButton({ products }: any) {
     const addItem = useCartStore((state) => state.addItem);
