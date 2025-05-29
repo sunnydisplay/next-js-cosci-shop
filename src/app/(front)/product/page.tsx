@@ -49,7 +49,7 @@ const Product = async () => {
                   {i.price}
                 </Badge>
                 <span className="font-medium text-xs text-muted-foreground">
-                  5 min read
+                  เหลือ 19 ชิ้น
                 </span>
               </div>
 
@@ -62,7 +62,7 @@ const Product = async () => {
               </p>
 
               <Button className="mt-6 shadow-none">
-                Read more <ChevronRight />
+                หยิบใส่ตระกร้า <ChevronRight />
               </Button>
             </CardContent>
           </Card>
