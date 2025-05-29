@@ -2,10 +2,10 @@ import { mysqlTable, /*mysqlSchema, AnyMySqlColumn,*/ primaryKey, int, varchar, 
 // import { sql } from "drizzle-orm"
 
 export const product = mysqlTable("Product", {
-	id: int({ unsigned: true }).autoincrement().notNull(),
-	title: varchar({ length: 255 }).notNull(),
-	price: decimal({ precision: 10, scale: 2 }).notNull(),
+    id: int({ unsigned: true }).autoincrement().notNull(),
+    title: varchar({ length: 255 }).notNull(),
+    price: decimal({ precision: 10, scale: 2 }).notNull(),
 },
 (table) => [
-	primaryKey({ columns: [table.id], name: "Product_id"}),
+    primaryKey({ columns: [table.id], name: "Product_id"}),
 ]);
