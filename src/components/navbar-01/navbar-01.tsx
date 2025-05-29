@@ -5,6 +5,7 @@ import { NavigationSheet } from "./navigation-sheet";
 import Link from "next/link";
 import { ShoppingBasket } from "lucide-react";
 import { Badge } from "../ui/badge";
+import CountCartItem from "@/app/(front)/component/CountCartItem";
 
 const Navbar01Page = () => {
   return (
@@ -16,13 +17,12 @@ const Navbar01Page = () => {
           {/* Desktop Menu */}
           <NavMenu className="hidden md:block" />
 
-
-          <Badge className="p-2 text-sm">
-            <ShoppingBasket />
-            0 item (s)
-          </Badge>
-
           <div className="flex items-center gap-3">
+            <Badge className="p-2 text-sm">
+            <ShoppingBasket />
+            <CountCartItem/> item (s) 
+          </Badge>
+          
             <Button asChild variant="outline" className="hidden sm:inline-flex">
             <Link href="/login">เข้าสู่ระบบ</Link>
 

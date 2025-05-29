@@ -4,7 +4,7 @@ import { useCartStore } from "@/lib/cart-store";
 import { useEffect, useState } from "react";
 
 export default function CountCartItem() {
-    const totalItems = useCartStore((state) => state.totalItems);
+    const totalItems = useCartStore((state) => state.totalItems());
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
@@ -15,7 +15,7 @@ export default function CountCartItem() {
 
   return (
     <>
-      <span>{totalItems()}</span>
+      <span>{totalItems}</span>
     </>
   );
 }
