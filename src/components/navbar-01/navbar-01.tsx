@@ -24,23 +24,35 @@ const Navbar01Page = async () => {
 
           <div className="flex items-center gap-3">
           
-          <Link href="/cart">
-            <Badge className="p-2 text-sm">
-              <ShoppingBasket />
-              <CountCartItem/> item (s) 
-            </Badge> 
-          </Link>
+          
           
             {
+              
               !session && (
-                <>
-                <Button asChild variant="outline" className="hidden sm:inline-flex">
+              <>
+              <Button asChild variant="outline" className="hidden sm:inline-flex">
             <Link href="/login">เข้าสู่ระบบ</Link>
 
             </Button>
             <Button asChild>
             <Link href="/signup">สมัครสมาชิก</Link>
             </Button>
+            </>)}
+            {
+              session && (
+                <>
+                <Link href="/cart">
+                  <Badge className="p-2 text-sm">
+                    <ShoppingBasket />
+                    <CountCartItem/> item (s) 
+                  </Badge> 
+                </Link>
+                <div className="flex items-center">
+                  helo, {session.user.name}
+                </div>
+                <Button variant="outline" asChild>
+                  <Link href="/dashboard">Dashboard</Link>
+                </Button>
                 </>
               )
             }
