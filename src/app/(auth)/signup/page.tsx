@@ -95,14 +95,14 @@ const SignUp01Page = () => {
               )}
             />
             <Button type="submit" className="mt-4 w-full">
-              Continue with Email
+              REGISTER
             </Button>
           </form>
         </Form>
 
         <p className="mt-5 text-sm text-center">
           Already have an account?
-          <Link href="#" className="ml-1 underline text-muted-foreground">
+          <Link href="/login" className="ml-1 underline text-muted-foreground">
             Log in
           </Link>
         </p>

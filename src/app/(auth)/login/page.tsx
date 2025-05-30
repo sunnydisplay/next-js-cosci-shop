@@ -95,7 +95,7 @@ const Login01Page = () => {
               )}
             />
             <Button type="submit" className="mt-4 w-full">
-              Continue with Email
+              LOGIN
             </Button>
           </form>
         </Form>
@@ -109,7 +109,7 @@ const Login01Page = () => {
           </Link>
           <p className="text-sm text-center">
             Don&apos;t have an account?
-            <Link href="#" className="ml-1 underline text-muted-foreground">
+            <Link href="/signup" className="ml-1 underline text-muted-foreground">
               Create account
             </Link>
           </p>

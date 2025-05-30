@@ -30,7 +30,7 @@ export default function CartList() {
                 <TableHead>ราคา</TableHead>
                 <TableHead>จำนวน</TableHead>
                 <TableHead>รวม</TableHead>
-                <TableHead>เครื่องมือ</TableHead>
+                <TableHead>นำสินค้าออก</TableHead>
             </TableRow>
         </TableHeader>
         <TableBody>
