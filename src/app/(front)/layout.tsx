@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Syne } from "next/font/google";
+import { Figtree } from "next/font/google";
 import "../globals.css";
 import Navbar01Page from "@/components/navbar-01/navbar-01";
 
-const syne = Syne({
+const figtree = Figtree({
   //subsets: ['thai'],
-  weight: ['400', '500', '600', '700', '800'],
+  weight: ['300',],
   display: 'swap', 
 });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${syne.className}`}
+        className={`${figtree.className}`}
       >
         <Navbar01Page/>
         {children}
