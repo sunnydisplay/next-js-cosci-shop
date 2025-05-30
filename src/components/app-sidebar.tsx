@@ -33,7 +33,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import { authClient } from "@/lib/auth-client"
-import { Avatar } from "@radix-ui/react-avatar"
+//import { Avatar } from "@radix-ui/react-avatar"
 import { useRouter } from "next/navigation"
 
 

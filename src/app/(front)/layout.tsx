@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Figtree } from "next/font/google";
+import { Noto_Sans_Thai } from "next/font/google";
 import "../globals.css";
 import Navbar01Page from "@/components/navbar-01/navbar-01";
 
-const figtree = Figtree({
+const noto_sans_thai = Noto_Sans_Thai({
   //subsets: ['thai'],
   weight: ['300',],
   display: 'swap', 
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${figtree.className}`}
+        className={`${noto_sans_thai.className}`}
       >
         <Navbar01Page/>
         {children}

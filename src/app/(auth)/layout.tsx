@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Asap } from "next/font/google";
+import { Noto_Sans_Thai } from "next/font/google";
 import "../globals.css";
 
-const asap = Asap({
-  //subsets: ['thai'],
+const noto_sans_thai = Noto_Sans_Thai({
+  subsets: ['thai'],
   weight: ['400', '500', '600', '700', '800'],
   display: 'swap', 
 });
@@ -21,7 +21,7 @@ export default function Authlayout({
   return (
     <html lang="en">
       <body
-        className={`${asap.className}`}
+        className={`${noto_sans_thai.className}`}
       >
         {children}
       </body>
