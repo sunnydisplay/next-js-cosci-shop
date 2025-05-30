@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Noto_Sans_Thai } from "next/font/google";
+import { K2D } from "next/font/google";
 import "../globals.css";
 import Navbar01Page from "@/components/navbar-01/navbar-01";
 
-const noto_sans_thai = Noto_Sans_Thai({
-  //subsets: ['thai'],
+const k2d = K2D({
+  subsets: ['thai'],
   weight: ['300',],
   display: 'swap', 
 });
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${noto_sans_thai.className}`}
+        className={`${k2d.className}`}
       >
         <Navbar01Page/>
         {children}

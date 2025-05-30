@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Noto_Sans_Thai } from "next/font/google";
+import { K2D } from "next/font/google";
 import "../globals.css";
 
-const noto_sans_thai = Noto_Sans_Thai({
-  //subsets: ['thai'],
+const k2d = K2D({
+  subsets: ['thai'],
   weight: ['400', '500', '600', '700', '800'],
   display: 'swap', 
 });
@@ -21,7 +21,7 @@ export default function Dashboardlayout({
   return (
     <html lang="en">
       <body
-        className={`${noto_sans_thai.className}`}
+        className={`${k2d.className}`}
       >
         {children}
       </body>
