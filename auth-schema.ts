@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { mysqlTable, varchar, text, timestamp, boolean, int } from "drizzle-orm/mysql-core";
 
 export const user = mysqlTable("user", {

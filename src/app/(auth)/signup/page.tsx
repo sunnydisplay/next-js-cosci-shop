@@ -48,7 +48,7 @@ const SignUp01Page = () => {
         },
         onSuccess: (ctx) => {
           console.log(ctx.data);
-          router.replace('/login')
+          router.replace('/dashboard')
             //redirect to the dashboard or sign in page
         },
         onError: (ctx) => {
