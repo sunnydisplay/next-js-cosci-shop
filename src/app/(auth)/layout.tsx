@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Syne } from "next/font/google";
+import { Asap } from "next/font/google";
 import "../globals.css";
 
-const syne = Syne({
+const asap = Asap({
   //subsets: ['thai'],
   weight: ['400', '500', '600', '700', '800'],
   display: 'swap', 
@@ -21,7 +21,7 @@ export default function Authlayout({
   return (
     <html lang="en">
       <body
-        className={`${syne.className}`}
+        className={`${asap.className}`}
       >
         {children}
       </body>

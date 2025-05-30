@@ -32,6 +32,11 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import { authClient } from "@/lib/auth-client"
+import { Avatar } from "@radix-ui/react-avatar"
+import { useRouter } from "next/navigation"
+
+
 
 const data = {
   user: {
@@ -151,6 +156,8 @@ const data = {
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const router = useRouter()
+  const { data: session } = authClient.useSession();
   return (
     <Sidebar collapsible="offcanvas" {...props}>
       <SidebarHeader>
@@ -160,9 +167,11 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               asChild
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
-              <a href="#">
+              <a  onClick={ async () => {
+                router.replace('/')
+              }}>
                 <IconInnerShadowTop className="!size-5" />
-                <span className="text-base font-semibold">Acme Inc.</span>
+                <span className="text-base font-semibold">Shopkins.co</span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
@@ -174,8 +183,15 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
-      </SidebarFooter>
+    {
+      session && <NavUser user={{
+        name:session.user.name,
+        email: session.user.email,
+        avatar: "/avatar/shadcn.jpg"
+      }} />
+    }
+
+    </SidebarFooter>
     </Sidebar>
   )
 }
